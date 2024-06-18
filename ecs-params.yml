@@ -16,8 +16,8 @@ task_definition:
 run_params:
   network_configuration:
     awsvpc_configuration:
-      subnets: ['subnet-00a7175be3bfc5325']  # Replace with your subnet ID
-      security_groups: ['sg_docker']  # Replace with your security group ID
+      subnets: ['subnet-00a7175be3bfc5325']  
+      security_groups: ['sg_docker'] 
       assign_public_ip: ENABLED
 
 
