@@ -1,4 +1,3 @@
-version: '3'
 services:
   web:
     image: hcoco1/dashcoco1-flask:latest

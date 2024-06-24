@@ -101,10 +101,25 @@ services:
       FLASK_ENV: development
       ```
 
+
+Build the new Docker image:
+docker build -t hcoco1/dashcoco1-flask:latest .
+
+Log in to Docker Hub:
+docker login
+
+Push the newly built image to Docker Hub:
+docker push hcoco1/dashcoco1-flask:latest
+
+
+This command pulls the latest version of the dashcoco1-flask image from the Docker Hub repository owned by the user hcoco1. It ensures that the local Docker environment has the most recent version of the specified Docker image:
 docker pull hcoco1/dashcoco1-flask:latest
 
+
+This command starts and runs the entire application defined in the docker-compose.yml file. Docker Compose is a tool for defining and running multi-container Docker applications:
 docker-compose up
 
+The command to stop and remove all the resources defined in the docker-compose.yml file:
 docker-compose down
 
 
