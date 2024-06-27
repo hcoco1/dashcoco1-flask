@@ -123,3 +123,18 @@ The command to stop and remove all the resources defined in the docker-compose.y
 docker-compose down
 
 
+docker-compose down --rmi all
+docker-compose up --build
+
+
+
+
+eb init -p docker dashcoco1 --region us-east-1
+eb create dashcoco1-env --region us-east-1
+eb deploy --region us-east-1
+eb open --region us-east-1
+eb logs --region us-east-1
+
+
+aws iam list-roles
+
